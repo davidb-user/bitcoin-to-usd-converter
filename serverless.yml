@@ -1,0 +1,14 @@
+service: bitcoin-to-usd-converter
+
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+plugins:
+  - serverless-plugin-typescript
+
+functions:
+  bitcoinToUsdConverter:
+    handler: handler.bitcoinToUsdConverter
